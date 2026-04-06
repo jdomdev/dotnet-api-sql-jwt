@@ -27,8 +27,9 @@ public class Product: IProduct
         var discountAmount = Price * (percentage / 100);
         Price -= discountAmount;
     }
-    public string GetDescription()
+    public virtual string GetDescription()
     {
         return $"Product: {Name}, Price: {Price:C}, Available: {IsAvailable}, Created At: {CreatedAt}, Unique Code: {UniqueCode}";
     }
 }
+
