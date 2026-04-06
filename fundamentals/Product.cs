@@ -33,3 +33,21 @@ public class Product: IProduct
     }
 }
 
+class ServiceProduct: Product
+{
+    public int DurationInDays { get; set; }
+    public ServiceProduct(int id, string? name, decimal price, int duration) : base(id, name, price, true, DateTime.Now, Guid.NewGuid())
+    {
+        DurationInDays = duration;
+    }
+    public override string GetDescription()
+    {
+        return $"{base.GetDescription()}, Duration: {DurationInDays} days";
+    }
+}
+
+
+    
+
+
+
