@@ -1,6 +1,6 @@
 using System;
 
-namespace csbases.fundamentals._05PatronAdaptador;
+namespace csbases.Fundamentals._05PatronAdaptador;
 
 public class ProductAdapter
 {

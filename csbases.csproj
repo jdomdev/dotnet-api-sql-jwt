@@ -10,4 +10,8 @@
   <ItemGroup Label="Simplificando el uso de la Consola">
   <Using Include="System.Console" Static="true" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Fundamentals/_06DependencyInyection/" />
+  </ItemGroup>
 </Project>

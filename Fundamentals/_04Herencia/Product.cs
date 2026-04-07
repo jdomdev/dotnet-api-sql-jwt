@@ -1,6 +1,4 @@
-using System;
-
-namespace csbases.fundamentals;
+namespace csbases.Fundamentals;
 
 public class Product: IProduct
 {

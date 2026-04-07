@@ -1,6 +1,6 @@
 using System;
 
-namespace csbases.fundamentals;
+namespace csbases.Fundamentals;
 
 public interface IProduct
 {
