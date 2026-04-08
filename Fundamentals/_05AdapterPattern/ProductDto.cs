@@ -1,6 +1,6 @@
 using System;
 
-namespace csbases.Fundamentals._05PatronAdaptador;
+namespace csbases.Fundamentals._05AdapterPattern;
 
 public class ProductDto
 {

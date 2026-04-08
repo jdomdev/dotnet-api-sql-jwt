@@ -1,6 +1,6 @@
 using System;
 
-namespace csbases.Fundamentals._02TiposBasicos;
+namespace csbases.Fundamentals._02PrimitiveTypes;
 
 public class DataTypes
 {

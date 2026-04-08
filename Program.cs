@@ -1,11 +1,12 @@
 ﻿using System.Globalization;
 using csbases.Fundamentals;
-using csbases.Fundamentals._05PatronAdaptador;
+using csbases.Fundamentals._05AdapterPattern;
 using csbases.Fundamentals._06DependencyInyection;
+using csbases.Fundamentals._07AsyncMethods;
 using static System.Console;
 
 class Program {
-    static void Main() {
+    static async Task Main() {
         // Configurar cultura al inicio
         CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("es-ES");
 
@@ -25,6 +26,11 @@ class Program {
         var installation = new ServiceProduct(5, "Instalación", 100m, 15);
         manager.PrintLabel(monitor);
         manager.PrintLabel(installation);
+        WriteLine("-------------ASYNC METHODS-----------------");
+        var firstProduct = await new ProductRepository().GetProductById(1);
+        WriteLine("Obteniendo producto...");
+        WriteLine($"Producto obtenido: {firstProduct.Name} - Precio: {firstProduct.Price:C}");
+
     }
 }
 

@@ -13,5 +13,6 @@
 
   <ItemGroup>
     <Folder Include="Fundamentals/_06DependencyInyection/" />
+    <Folder Include="Fundamentals/_07AsyncMethods/" />
   </ItemGroup>
 </Project>
