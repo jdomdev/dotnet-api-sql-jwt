@@ -3,6 +3,7 @@ using csbases.Fundamentals;
 using csbases.Fundamentals._05AdapterPattern;
 using csbases.Fundamentals._06DependencyInyection;
 using csbases.Fundamentals._07AsyncMethods;
+using csbases.Fundamentals._08Attributes;
 using static System.Console;
 
 class Program {
@@ -30,7 +31,13 @@ class Program {
         var firstProduct = await new ProductRepository().GetProductById(1);
         WriteLine("Obteniendo producto...");
         WriteLine($"Producto obtenido: {firstProduct.Name} - Precio: {firstProduct.Price:C}");
-
+        WriteLine("-------------ATTRIBUTES-----------------");
+        firstProduct.Description = "Descripción del producto";
+        WriteLine($"Descripción original: {firstProduct.Description}");
+        AttributeProcessor.ApplyUpperCase(firstProduct);
+        WriteLine("Obteniendo producto con atributos modificados a mayúsculas...");
+        WriteLine($"Producto obtenido: {firstProduct.Name} - Precio: {firstProduct.Price:C}");
+        WriteLine($"Descripción después de aplicar UpperCase: {firstProduct.Description}");
     }
 }
 
